@@ -1,0 +1,3 @@
+purple #9d497a
+orange: #ed9e4e
+white #EEECDA

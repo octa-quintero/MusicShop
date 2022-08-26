@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* <<<<<<< ESTRUCTURA - PAGINA >>>>>>> */
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 300px auto 300px;
+    width: 100%;
+}
+
+/* <<<<<<< ESTRUCTURA - PAGINA - FIN >>>>>>> */
+
+
+body{
+    background-color: #EEECDA;
+}
+
+.header{
+    align-items: center;
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    top: 0;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    background: rgb(208,236,10);
+    background: linear-gradient(0deg, rgba(208,236,10,1) 0%, rgba(210,149,93,1) 38%, rgba(214,27,210,1) 99%);
+    padding-bottom: 100px;
+}
+
+
+.header a img{
+    width: 250px;
+    padding: 0px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+
+
+
+.navbar-collapse{
+    position: relative;
+    left: 350px;
+    top: 40px;
+}
+
+
+.header ul li:hover ul {
+    display:block;
+    background-color: transparent;
+    border: none;
+
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Maven Pro' ;
+    font-size: 1.3rem;
+    position: relative;
+    margin-block: 1px;
+
+}
+
+.nav-item{
+    padding-left: 30px;
+}
+
+.header nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+    background-color: transparent;
+}
+
+.header nav ul li ul a{
+    color: black;
+    font-weight: bold;
+}
+
+.main{
+    grid-row: 2/3;
+    grid-column: 2/5;
+    width: 100%;
+    align-items: center;
+    top: 0px;
+    margin: 0px;
+    background-color: #EEECDA;
+}
+
+.main .carrusel{
+    position: relative;
+    top: 0px;
+}
+
+/* <<<<<<< CARRUSEL - FIN >>>>>>> */
+
+
+
+/* <<<<<<< SOCIAL - BAR >>>>>>> */
+
+.social-bar{
+    position: fixed;
+    left: -35px;
+    top: 300px;
+    z-index: 2000;
+}
+
+.social-bar ul{
+    list-style: none;
+}
+
+.social-bar ul li a{
+    display: inline-block;
+    color: white;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social-bar ul li .icon-facebook{background:#3b5998 ;}
+
+.social-bar ul li .icon-instagram{background:#ff0069;}
+
+.social-bar ul li .icon-whatsapp{background:#25d366;}
+
+.social-bar ul li a:hover{
+    padding: 10px 25px;
+}
+
+/* <<<<<<< SOCIAL - BAR - FIN >>>>>>> */
+
+
+footer{
+    grid-row: 3/4;
+    grid-column: 1/5;
+    width: 100%;
+}
+
+
