@@ -6,52 +6,74 @@
     font-family: 'Maven Pro', sans-serif;
 }
 
-/* <<<<<<< ESTRUCTURA - PAGINA >>>>>>> */
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< ESTRUCTURA PAGINA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< ESTRUCTURA PAGINA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< ESTRUCTURA PAGINA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+body{
+    display: grid;
+    background-color: #EEECDA;
+    width: 100%;
+
+}
 
 .container{
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 300px auto 300px;
     width: 100%;
+    padding: 0;
+    border: none;   
+    margin: 0;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    
 }
 
-/* <<<<<<< ESTRUCTURA - PAGINA - FIN >>>>>>> */
 
 
-body{
-    background-color: #EEECDA;
-}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< ESTRUCTURA PAGINA FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< ESTRUCTURA PAGINA FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< ESTRUCTURA PAGINA FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 
 .header{
     align-items: center;
-    position: relative;
-    grid-row: 1/2;
-    grid-column: 1/5;
+    position: absolute;
     top: 0;
+    grid-column: 1/5;
+    grid-row: 1/2;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     border: none;
-    background: rgb(208,236,10);
-    background: linear-gradient(0deg, rgba(208,236,10,1) 0%, rgba(210,149,93,1) 38%, rgba(214,27,210,1) 99%);
-    padding-bottom: 100px;
+    background: #0e0e0e;
+    padding-bottom: 150px;
 }
 
 
 .header a img{
     width: 250px;
     padding: 0px;
-    position: relative;
+    position: absolute;
     top: 40px;
     left: 40px;
 }
 
 
-
-
 .navbar-collapse{
     position: relative;
-    left: 350px;
-    top: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -64,50 +86,80 @@ body{
 
 .header nav ul li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color:#f2f2f2;
     font-weight: bold;
     font-family: 'Maven Pro' ;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     position: relative;
-    margin-block: 1px;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+    
 
 }
 
 .nav-item{
-    padding-left: 30px;
+    position: relative;
+    margin-left: 30px;
+    left: 700px;
+    top: 50px;
 }
 
 .header nav ul li a:hover{
-    text-decoration: none;
     color: rgb(255, 255, 0);
-    background-color: transparent;
+    font-size: 25px;
+    transition: 0.2s;
+    margin-top: 0;
+    padding: 0;
+    backface-visibility: hidden;
 }
 
 .header nav ul li ul a{
-    color: black;
+    color: #f2f2f2;
     font-weight: bold;
 }
 
+.header nav ul li ul a:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< HEADER FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .main{
+    display: grid;
     grid-row: 2/3;
-    grid-column: 2/5;
+    grid-column: 1/5;
     width: 100%;
-    align-items: center;
+    position: absolute;
     top: 0px;
     margin: 0px;
     background-color: #EEECDA;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< CARRUSEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< CARRUSEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< CARRUSEL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .main .carrusel{
     position: relative;
-    top: 0px;
 }
 
-/* <<<<<<< CARRUSEL - FIN >>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< CARRUSEL FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< CARRUSEL FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< CARRUSEL FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
 
-/* <<<<<<< SOCIAL - BAR >>>>>>> */
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< SOCIAL BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< SOCIAL BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< SOCIAL BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .social-bar{
     position: fixed;
@@ -142,13 +194,144 @@ body{
     padding: 10px 25px;
 }
 
-/* <<<<<<< SOCIAL - BAR - FIN >>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< SOCIAL BAR FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< SOCIAL BAR FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< SOCIAL BAR FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
 footer{
     grid-row: 3/4;
     grid-column: 1/5;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3rem 8%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.logo-footer{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-item-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.social-icon-facebook{
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 27px;
+    border: 2px solid transparent;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    backface-visibility: hidden;
+}
+
+.social-icon-whatsapp{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 27px;
+    border: 2px solid transparent;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social-icon-instagram{
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 27px;
+    backface-visibility: hidden;
+    border: 2px solid transparent;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+}
+
+.social-icon-facebook:hover{
+    text-decoration: none;
+    color: #3b5998;
+    font-size: 30px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    margin-top: 0;
+}
+
+.social-icon-instagram:hover{
+    text-decoration: none;
+    color: #ff0069;
+    font-size: 30px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    margin-top: 0;
+    
+}
+
+.social-icon-whatsapp:hover{
+    text-decoration: none;
+    color: #25d366;
+    font-size: 30px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    margin-top: 0;
+}
+
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 25px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.2;
+}
+
+.menu-item:hover{
+    opacity: 5;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.2;
+    text-align: center;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< FOOTER FIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 

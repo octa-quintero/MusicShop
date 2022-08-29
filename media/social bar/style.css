@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?g3f9lf');
-  src:  url('fonts/icomoon.eot?g3f9lf#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?g3f9lf') format('truetype'),
-    url('fonts/icomoon.woff?g3f9lf') format('woff'),
-    url('fonts/icomoon.svg?g3f9lf#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pl7n17');
+  src:  url('fonts/icomoon.eot?pl7n17#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pl7n17') format('truetype'),
+    url('fonts/icomoon.woff?pl7n17') format('woff'),
+    url('fonts/icomoon.svg?pl7n17#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,14 +27,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home3:before {
-  content: "\e902";
-}
-.icon-bullhorn:before {
-  content: "\e91a";
+.icon-home2:before {
+  content: "\e901";
 }
 .icon-phone:before {
   content: "\e942";
+}
+.icon-user:before {
+  content: "\e971";
 }
 .icon-fire:before {
   content: "\e9a9";
